@@ -65,6 +65,7 @@ infra_nw_dns: 192.168.110.10                    # Infrastructure network DNS
 infra_nw_gateway: 192.168.20.1            # Infrastructure network Gateway
 infra_nw_azs: PKS                         # Comma separated list of AZ's to be associated with this network
 nsx_networking_enabled: false              # (true|false) to use nsx networking feature
+nsx_mode:                           # Valid values: nsx-t, nsx-v
 
 # Careful with the indent and the | for multi-line input
 nsx_ca_certificate: |                     # cert for nsx

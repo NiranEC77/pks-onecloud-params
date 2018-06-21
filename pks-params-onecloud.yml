@@ -14,7 +14,7 @@ vcenter_ca_cert:           # vCenter CA cert at the API endpoint; enter a value 
 # Ops Manager VM configuration
 om_vm_host:               # Optional - vCenter host to deploy Ops Manager in
 om_data_store: iscsi                  # vCenter datastore name to deploy Ops Manager in
-opsman_domain_or_ip_address: pas-opsman.corp.local              # FQDN to access Ops Manager without protocol (will use https), ex: opsmgr.example.com
+opsman_domain_or_ip_address: pks-opsman.corp.local              # FQDN to access Ops Manager without protocol (will use https), ex: opsmgr.example.com
 opsman_admin_username: admin          # Username for Ops Manager admin account
 opsman_admin_password: VMware1!    # Password for Ops Manager admin account
 om_ssh_pwd:  VMware1!                  # SSH password for Ops Manager (ssh user is ubuntu)
@@ -114,7 +114,7 @@ pks_tile_vm_folder: PKS
 
 pks_tile_singleton_job_az: PKS # Check
 pks_tile_nw_azs: PKS
-pks_tile_deployment_network_name: PKS-Deployment        # Can be any network created already, default: INFRASTRUCTURE
+pks_tile_deployment_network_name: PKS-Infra        # Can be any network created already, default: INFRASTRUCTURE
 pks_tile_cluster_service_network_name: PKS-k8s-clusters # Should match the PKS-k8s-clusters network created already
 
 pks_tile_nsx_skip_ssl_verification: true # can be true or false

@@ -199,6 +199,14 @@ pks_tile_plan_details:
     plan_selector: plan3_selector # Dont change the value of selector - Needs to be planN_selector
     # other fields not considered if its not active
 
+pks_tile_t0_router_name: DefaultT0Router                               # EDIT - Name of T0 Router to be used for PKS
+pks_tile_nsx_nat_mode: true                                            # Set to true
+pks_tile_external_ip_pool_name: snat-vip-pool-for-pks                  # EDIT - Name of External Floating IP Pool in NSX Mgr to be used for PKS
+pks_tile_container_ip_block_name: container-ip-block  # EDIT - Name of Container IP Block in NSX Mgr to be used for PKS
+pks_tile_nodes_ip_block_name: nodes-ip-block     # EDIT - Name of Node IP Block in NSX Mgr to be used for PKS nodes in v1.1
+pks_tile_vcenter_cluster_list: RegionA01-K8s                                # EDIT - List of vcenter clusters for PKS to deploy k8s clusters
+pks_tile_nodes_dns_list: 192.168.110.10                                       # EDIT - DNS server ip list for use by k8s nodes
+
 # Use this for downloading tile from a s3 bucket
 s3_bucket: pks-tile-s3              # Required for S3. ID of the AWS S3 bucket to download Pivotal releases from
 s3_creds_access_key_id: AAa23....asdfZA       # Required for S3. Access key of the AWS S3 bucket

@@ -169,7 +169,6 @@ pks_tile_plan_details:
     is_active: true
     description: "Small plan"
     az_placement: PKS  # Specify the AZ in which the cluster will be created
-    authorization_mode: rbac    # rbac - Default Cluster Authorization Mode
     master_vm_type: medium
     master_persistent_disk_type: "10240"
     worker_vm_type: medium
@@ -184,7 +183,6 @@ pks_tile_plan_details:
     plan_selector: plan2_selector # Dont change the value of selector - Needs to be planN_selector
     description: "Medium plan"
     az_placement: PKS  # Specify the AZ in which the cluster will be created
-    authorization_mode: rbac    # rbac or abac - Default Cluster Authorization Mode
     master_vm_type: medium
     master_persistent_disk_type: "10240"
     worker_vm_type: medium

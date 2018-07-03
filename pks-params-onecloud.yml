@@ -204,7 +204,7 @@ pks_tile_container_ip_block_name: container-ip-block  # EDIT - Name of Container
 pks_tile_nodes_ip_block_name: nodes-ip-block     # EDIT - Name of Node IP Block in NSX Mgr to be used for PKS nodes in v1.1
 pks_tile_vcenter_cluster_list: RegionA01-K8s                                # EDIT - List of vcenter clusters for PKS to deploy k8s clusters
 pks_tile_nodes_dns_list: 192.168.110.10                                       # EDIT - DNS server ip list for use by k8s nodes
-
+pks_tile_uaa_system_domain_ip: 10.208.50.4
 # Use this for downloading tile from a s3 bucket
 s3_bucket: pks-tile-s3              # Required for S3. ID of the AWS S3 bucket to download Pivotal releases from
 s3_creds_access_key_id: AAa23....asdfZA       # Required for S3. Access key of the AWS S3 bucket

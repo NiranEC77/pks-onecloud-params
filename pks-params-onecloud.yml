@@ -72,13 +72,13 @@ nsx_mode:                           # Valid values: nsx-t, nsx-v
 nsx_ca_certificate: |                     # cert for nsx
 
 # Additional network for PKS Clusters - set to empty "" string for the vsphere network if its not required
-#pks_network_name: "PKS-k8s-clusters"             # Logical switch for PKS-k8s-clusters
-#pks_vsphere_network: "PKS-k8s-Clusters"             # vCenter PKS-k8s-clusters  network name for PKS - if empty quotes, then this network would be skipped
-#pks_nw_cidr: 192.168.40.0/24        # PKS-k8s-clusters network CIDR, ex: 10.0.0.0/22
-#pks_excluded_range: 192.168.40.1    # PKS-k8s-clusters network exclusion range
-#pks_nw_dns: 192.168.110.10                # PKS-k8s-clusters network DNS
-#pks_nw_gateway: 192.168.40.1        # PKS-k8s-clusters network Gateway
-#pks_nw_azs: PKS                     # Comma separated list of AZ's to be associated with this network
+pks_network_name:              # Logical switch for PKS-k8s-clusters
+pks_vsphere_network:              # vCenter PKS-k8s-clusters  network name for PKS - if empty quotes, then this network would be skipped
+pks_nw_cidr:         # PKS-k8s-clusters network CIDR, ex: 10.0.0.0/22
+pks_excluded_range:     # PKS-k8s-clusters network exclusion range
+pks_nw_dns:                 # PKS-k8s-clusters network DNS
+pks_nw_gateway:         # PKS-k8s-clusters network Gateway
+pks_nw_azs:                      # Comma separated list of AZ's to be associated with this network
 #is_service_network: true  # Required select service network option in Ops man true or false
 
 ## NSX Mgr section

@@ -188,7 +188,7 @@ pks_tile_plan_details:
     plan_selector: plan1_selector # Dont change the value of selector - Needs to be planN_selector
     is_active: true
     description: "Small plan"
-    az_placement: PKS1, PKS2, PKS3  # Specify the AZ in which the cluster will be created
+    az_placement: PKS1,PKS2,PKS3  # Specify the AZ in which the cluster will be created
     master_vm_type: medium
     master_persistent_disk_type: "10240"
     worker_vm_type: medium
@@ -202,7 +202,7 @@ pks_tile_plan_details:
     is_active: false
     plan_selector: plan2_selector # Dont change the value of selector - Needs to be planN_selector
     description: "Medium plan"
-    az_placement: PKS1, PKS2, PKS3  # Specify the AZ in which the cluster will be created
+    az_placement: PKS1,PKS2,PKS3  # Specify the AZ in which the cluster will be created
     master_vm_type: medium
     master_persistent_disk_type: "10240"
     worker_vm_type: medium

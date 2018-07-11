@@ -86,7 +86,7 @@ pks_nw_cidr: 192.168.30.0/24          # PKS-Services network CIDR, ex: 10.0.0.0/
 pks_excluded_range: 192.168.30.1      # PKS-Services network exclusion range
 pks_nw_dns: 192.168.110.10                # PKS-Services network DNS
 pks_nw_gateway: 192.168.30.1          # PKS-Services network Gateway
-pks_nw_azs: PKS1                     # Comma separated list of AZ's to be associated with this network
+pks_nw_azs: PKS1,PKS2,PKS3                     # Comma separated list of AZ's to be associated with this network
 is_service_network: true  # Required select service network option in Ops man true or false
 
 # Careful with the indent and the | for multi-line input

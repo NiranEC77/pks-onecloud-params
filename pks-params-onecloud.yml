@@ -129,7 +129,7 @@ pks_tile_vcenter_datastore: iscsi #as of PKS version 1.0 cannot use multpile dat
 pks_tile_vm_folder: PKS
 
 pks_tile_singleton_job_az: PKS1 # Check
-pks_tile_nw_azs: PKS1, PKS2, PKS3
+pks_tile_nw_azs: PKS1,PKS2,PKS3
 pks_tile_deployment_network_name: PKS-Services        # Can be any network created already, default: INFRASTRUCTURE
 pks_tile_cluster_service_network_name: PKS-Services # Should match the PKS-k8s-clusters network created already
 

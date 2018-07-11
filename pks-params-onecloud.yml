@@ -72,7 +72,7 @@ infra_nw_cidr: 192.168.20.0/24              # Infrastructure network CIDR, ex: 1
 infra_excluded_range: 192.168.20.0-192.168.20.9       # Infrastructure network exclusion range
 infra_nw_dns: 192.168.110.10                    # Infrastructure network DNS
 infra_nw_gateway: 192.168.20.1            # Infrastructure network Gateway
-infra_nw_azs: PKS                         # Comma separated list of AZ's to be associated with this network
+infra_nw_azs: PKS1                         # Comma separated list of AZ's to be associated with this network
 nsx_networking_enabled: true              # (true|false) to use nsx networking feature. PKS v1.1+ requires it to be true
 nsx_mode: nsx-t                           # Valid values: nsx-t, nsx-v
 nsx_address: nsx-mgr.corp.local    # address of Nsx Mgr FQDN, not IP

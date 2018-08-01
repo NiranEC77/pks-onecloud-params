@@ -75,7 +75,7 @@ infra_nw_gateway: 192.168.50.1            # Infrastructure network Gateway
 infra_nw_azs: PKS1                         # Comma separated list of AZ's to be associated with this network
 nsx_networking_enabled: true              # (true|false) to use nsx networking feature. PKS v1.1+ requires it to be true
 nsx_mode: nsx-t                           # Valid values: nsx-t, nsx-v
-nsx_address: nsx-mgr.corp.local    # address of Nsx Mgr FQDN, not IP
+nsx_address: nsxt-man.corp.local    # address of Nsx Mgr FQDN, not IP
 nsx_username: admin                       # username for nsx access
 nsx_password: VMware1!                # password for nsx access
 

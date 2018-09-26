@@ -141,6 +141,8 @@ pks_tile_container_ip_block_name: PKS-pod-ip-block  # EDIT - Name of Container I
 pks_tile_nodes_ip_block_name: PKS-node-ip-block     # EDIT - Name of Node IP Block in NSX Mgr to be used for PKS nodes in v1.1
 pks_tile_vcenter_cluster_list:  RegionA01-K8s                               # EDIT - List of vcenter clusters for PKS to deploy k8s clusters
 pks_tile_nodes_dns_list: 192.168.110.10     
+pks_tile_nsx_skip_ssl_verification: true 
+pks_tile_disable_nsx_t_precheck_errand: false
 
 pks_tile_syslog_migration_enabled: disabled # can be enabled
 pks_tile_syslog_address: #101.10.10.10

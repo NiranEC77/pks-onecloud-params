@@ -1,8 +1,7 @@
 # Pipeline resource configuration
 pivnet_token: TL8p6HPyTaQmbEzZyR2s    # Pivnet token for downloading resources from Pivnet. Find this token at https://network.pivotal.io/users/dashboard/edit-profile
-opsman_major_minor_version: ^2\.1\.2$   # PCF Ops Manager minor version to track
-#pks_major_minor_version: ^1\.0.*$       # use PKS v1.0
-pks_major_minor_version: ^1\.1.*$       # Use this once PKS v1.1 becomes GA
+opsman_major_minor_version: ^2\.2.*$   # PCF Ops Manager minor version to track
+pks_major_minor_version: ^1\..*$         # use PKS v1.1
 
 # vCenter configuration
 vcenter_host: 192.168.110.22            # vCenter host or IP

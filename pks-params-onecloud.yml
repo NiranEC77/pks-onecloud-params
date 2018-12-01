@@ -71,7 +71,7 @@ infra_nw_cidr: 192.168.50.0/24              # Infrastructure network CIDR, ex: 1
 infra_excluded_range: 192.168.50.0-192.168.50.9       # Infrastructure network exclusion range
 infra_nw_dns: 192.168.110.10                    # Infrastructure network DNS
 infra_nw_gateway: 192.168.50.1            # Infrastructure network Gateway
-infra_nw_azs: PKS1                         # Comma separated list of AZ's to be associated with this network
+infra_nw_azs: AZ1                         # Comma separated list of AZ's to be associated with this network
 nsx_networking_enabled: true              # (true|false) to use nsx networking feature. PKS v1.1+ requires it to be true
 nsx_mode: nsx-t                           # Valid values: nsx-t, nsx-v
 nsx_address: nsxt-man.corp.local    # address of Nsx Mgr FQDN, not IP
@@ -85,7 +85,7 @@ pks_nw_cidr: 192.168.60.0/24          # PKS-Services network CIDR, ex: 10.0.0.0/
 pks_excluded_range: 192.168.60.1      # PKS-Services network exclusion range
 pks_nw_dns: 192.168.110.10                # PKS-Services network DNS
 pks_nw_gateway: 192.168.60.1          # PKS-Services network Gateway
-pks_nw_azs: PKS1,PKS2,PKS3                     # Comma separated list of AZ's to be associated with this network
+pks_nw_azs: AZ1,AZ2,AZ3                     # Comma separated list of AZ's to be associated with this network
 is_service_network: true  # Required select service network option in Ops man true or false
 
 # Careful with the indent and the | for multi-line input

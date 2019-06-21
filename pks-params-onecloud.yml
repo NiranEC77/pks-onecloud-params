@@ -1,7 +1,7 @@
 # Pipeline resource configuration
-pivnet_token: TL8p6HPyTaQmbEzZyR2s    # Pivnet token for downloading resources from Pivnet. Find this token at https://network.pivotal.io/users/dashboard/edit-profile
-opsman_major_minor_version: ^2\.3.*$   # PCF Ops Manager minor version to track
-pks_major_minor_version: ^1\..*$         # use PKS v1.1
+pivnet_token: MgQvFfqi-eHnNx8xkR9x    # Pivnet token for downloading resources from Pivnet. Find this token at https://network.pivotal.io/users/dashboard/edit-profile
+opsman_major_minor_version: ^2\.4.*$   # PCF Ops Manager minor version to track
+pks_major_minor_version: ^1\.3.*$         # use PKS v1.1
 
 # vCenter configuration
 vcenter_host: 192.168.110.22            # vCenter host or IP
@@ -50,13 +50,13 @@ az_1_name: AZ1                   # Logical name of availability zone. No spaces 
 az_1_cluster_name: RegionA01-K8s      # Name of cluster in vCenter for PKS
 az_1_rp_name: PKS-AZ1            # Resource pool name in vCenter for PKS
 
-az_2_name: AZ2                   # Logical name of availability zone. No spaces or special characters.
-az_2_cluster_name: RegionA01-K8s      # Name of cluster in vCenter for PKS
-az_2_rp_name: PKS-AZ2            # Resource pool name in vCenter for PKS
+az_2_name:                    # Logical name of availability zone. No spaces or special characters.
+az_2_cluster_name:       # Name of cluster in vCenter for PKS
+az_2_rp_name:             # Resource pool name in vCenter for PKS
 
-az_3_name: AZ3                   # Logical name of availability zone. No spaces or special characters.
-az_3_cluster_name: RegionA01-K8s      # Name of cluster in vCenter for PKS
-az_3_rp_name: PKS-AZ3             # Resource pool name in vCenter for PKS
+az_3_name:                    # Logical name of availability zone. No spaces or special characters.
+az_3_cluster_name:       # Name of cluster in vCenter for PKS
+az_3_rp_name:              # Resource pool name in vCenter for PKS
 
 ntp_servers: 192.168.110.10                 # Comma-separated list of NTP servers to use for VMs deployed by BOSH
 enable_vm_resurrector: true   # Whether to enable BOSH VM resurrector
@@ -76,7 +76,7 @@ nsx_networking_enabled: true              # (true|false) to use nsx networking f
 nsx_mode: nsx-t                           # Valid values: nsx-t, nsx-v
 nsx_address: nsxt-man.corp.local    # address of Nsx Mgr FQDN, not IP
 nsx_username: admin                       # username for nsx access
-nsx_password: VMware1!                # password for nsx access
+nsx_password: VMware1!VMware1!                # password for nsx access
 
 # Additional network for PKS Controller & Harbor
 pks_network_name: "PKS-Services"             # Logical switch for PKS-Services
@@ -85,7 +85,7 @@ pks_nw_cidr: 192.168.60.0/24          # PKS-Services network CIDR, ex: 10.0.0.0/
 pks_excluded_range: 192.168.60.1      # PKS-Services network exclusion range
 pks_nw_dns: 192.168.110.10                # PKS-Services network DNS
 pks_nw_gateway: 192.168.60.1          # PKS-Services network Gateway
-pks_nw_azs: AZ1,AZ2,AZ3                     # Comma separated list of AZ's to be associated with this network
+pks_nw_azs: AZ1                     # Comma separated list of AZ's to be associated with this network
 is_service_network: true  # Required select service network option in Ops man true or false
 
 # Careful with the indent and the | for multi-line input
@@ -128,7 +128,7 @@ pks_tile_vcenter_datastore: iscsi #as of PKS version 1.0 cannot use multpile dat
 pks_tile_vm_folder: PKS
 
 pks_tile_singleton_job_az: AZ1 # Check
-pks_tile_nw_azs: AZ1,AZ2,AZ3
+pks_tile_nw_azs: AZ1
 pks_tile_deployment_network_name: PKS-Services        # Can be any network created already, default: INFRASTRUCTURE
 pks_tile_cluster_service_network_name: PKS-Services # Should match the PKS-k8s-clusters network created already
 
@@ -183,13 +183,17 @@ pks_tile_wavefront_api_url:
 pks_tile_wavefront_token:
 pks_tile_allow_public_ip:
 
+pks_tile_ldap_group_search_filter:
+pks_tile_ldap_search_filter:
+pks_tile_ldap_use_oidc:
+
 pks_tile_plan_details:
 - plan_detail:
     name: "small"  # the name that appears for end users to choose
     plan_selector: plan1_selector # Dont change the value of selector - Needs to be planN_selector
     is_active: true
     description: "Small plan"
-    az_placement: AZ1,AZ2,AZ3  # Specify the AZ in which the cluster will be created
+    az_placement: AZ1 # Specify the AZ in which the cluster will be created
     master_vm_type: medium
     master_persistent_disk_type: "10240"
     worker_vm_type: medium
@@ -203,7 +207,7 @@ pks_tile_plan_details:
     is_active: false
     plan_selector: plan2_selector # Dont change the value of selector - Needs to be planN_selector
     description: "Medium plan"
-    az_placement: AZ1,AZ2,AZ3  # Specify the AZ in which the cluster will be created
+    az_placement: AZ1  # Specify the AZ in which the cluster will be created
     master_vm_type: medium
     master_persistent_disk_type: "10240"
     worker_vm_type: medium

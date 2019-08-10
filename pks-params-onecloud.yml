@@ -194,9 +194,9 @@ pks_tile_plan_details:
     is_active: true
     description: "Small plan"
     az_placement: AZ1 # Specify the AZ in which the cluster will be created
-    master_vm_type: medium
+    master_vm_type: medium.disk
     master_persistent_disk_type: "10240"
-    worker_vm_type: medium
+    worker_vm_type: medium.disk
     persistent_disk_type: "10240"
     worker_instances: 3    # The number of K8s worker instances
     errand_vm_type: micro

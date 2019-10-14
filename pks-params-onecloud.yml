@@ -1,5 +1,5 @@
 # Pipeline resource configuration
-pivnet_token: 3x2eyhvDSXVKC6bmiW9e    # Pivnet token for downloading resources from Pivnet. Find this token at https://network.pivotal.io/users/dashboard/edit-profile
+pivnet_token: XXXXXXX    # Pivnet token for downloading resources from Pivnet. Find this token at https://network.pivotal.io/users/dashboard/edit-profile
 opsman_major_minor_version: ^2\.5.*$   # PCF Ops Manager minor version to track
 pks_major_minor_version: ^1\.5.*$         # use PKS v1.1
 

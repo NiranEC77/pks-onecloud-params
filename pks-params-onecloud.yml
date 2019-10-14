@@ -1,7 +1,7 @@
 # Pipeline resource configuration
-pivnet_token: MgQvFfqi-eHnNx8xkR9x    # Pivnet token for downloading resources from Pivnet. Find this token at https://network.pivotal.io/users/dashboard/edit-profile
+pivnet_token: 3x2eyhvDSXVKC6bmiW9e    # Pivnet token for downloading resources from Pivnet. Find this token at https://network.pivotal.io/users/dashboard/edit-profile
 opsman_major_minor_version: ^2\.5.*$   # PCF Ops Manager minor version to track
-pks_major_minor_version: ^1\.4.*$         # use PKS v1.1
+pks_major_minor_version: ^1\.5.*$         # use PKS v1.1
 
 # vCenter configuration
 vcenter_host: 192.168.110.22            # vCenter host or IP
@@ -57,6 +57,10 @@ az_2_rp_name:             # Resource pool name in vCenter for PKS
 az_3_name:                    # Logical name of availability zone. No spaces or special characters.
 az_3_cluster_name:       # Name of cluster in vCenter for PKS
 az_3_rp_name:              # Resource pool name in vCenter for PKS
+
+az_4_name:                    # Logical name of availability zone. No spaces or special characters.
+az_4_cluster_name:       # Name of cluster in vCenter for PKS
+az_4_rp_name:  
 
 ntp_servers: 192.168.110.10                 # Comma-separated list of NTP servers to use for VMs deployed by BOSH
 enable_vm_resurrector: true   # Whether to enable BOSH VM resurrector

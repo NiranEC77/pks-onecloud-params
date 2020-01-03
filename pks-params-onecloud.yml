@@ -1,7 +1,15 @@
 # Pipeline resource configuration
-pivnet_token: XXXXXXX    # Pivnet token for downloading resources from Pivnet. Find this token at https://network.pivotal.io/users/dashboard/edit-profile
-opsman_major_minor_version: ^2\.5.*$   # PCF Ops Manager minor version to track
-pks_major_minor_version: ^1\.5.*$         # use PKS v1.1
+pivnet_token: 3x2eyhvDSXVKC6bmiW9e    # Pivnet token for downloading resources from Pivnet. Find this token at https://network.pivotal.io/users/dashboard/edit-profile
+opsman_major_minor_version: ^2\.7.*$   # PCF Ops Manager minor version to track
+pks_major_minor_version: ^1\.6.*$         # use PKS v1.1
+om_ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDCqqPfm35VGK5ArxBjr2Q1CWGrCBl/x1HcCj8FAokDMJFB/kxWR/xKKbOqFRnb6afCFEu+mHPIZOfHue7tllF/3cRYTLDVvO4MSFFYxFKCl5LC0Dod26zL2v4yOi+gQJ0vwa3jtOhBMg9I5/xEjGGhCBPGBP/zhf6jdnjMU2D9V/rRJhCjE/QRKkzPULRMB4pucWukVFaWqsSv/9RT7wEL6DDDkwFh0tM/urQDYtffbdCT7FyUTfNdusheXzK+IvrU4GiIRfSHu4gEJafGCeVGM4liHP6wPgRT3muS5VhsxYNgi+xdBLvPX+L4EHF91t/XkDgvELygCcu3dXAQdSl9Ja9FkIRw15vlHEJljhIdTowkCY87jp22XQ2V384UCyvu2hHnwPXdAPbugQuD0on33ZHxsTiRY7V6wLSBtfS+d0xIK+8NCqPZdyfR1E58lTsRBFur7BehJk8LLxx0Obk+VDFaWiczU7w1wnxGJa+oOlBr+tXUOhdwZIH1szmbnY4VSfPvBw51WFNJqYstuPFVEMVEPWSXFu53AhZ56J3skhlqKJr/HfbLhIkY4nuwLPqErKBSgI5neGtrwM7XC167Ex5ibd2CvHvcsVqmmajcTcFOKs7gAM0OsDLb+I5nyikcLITNvF/vay4jiDyIy2PmemCjufW2xAuLDchGq4lp0Q== root@ux-jumphost 
+
+
+pks_enable_cadvisor:
+pks_purpose: prod
+pks_tile_admin_ad_group:
+pks_tile_manage_ad_group:
+pks_ceip_level: disabled
 
 # vCenter configuration
 vcenter_host: 192.168.110.22            # vCenter host or IP
